@@ -1,17 +1,14 @@
-# node-refresh-token
-Implement Refresh Token Authentication Using Node and JWT
+# node-jwt-refresh-token-template
+Template to implement access and refresh token authentication using NodeJS and JWT
 
-Clone the repository and switch to the project directory.
+## Installation
 
-Install dependencies using ```npm install``` command then run the code using following command.
+Install dependencies using **npm install** and then run the code using **node app.js**.
 
-```node app.js```
+## Testing
 
-Give following API calls to check the working.
-
-```/login```
-
-post data => 
+- To test if the server works, make a GET call at http://localhost:3000/api/ (the default port is 3000)
+- To test if the auth works, make a POST call at http://localhost:3000/api/login with the following data
 
 ```
 {
@@ -20,8 +17,6 @@ post data =>
 }
 ```
 
-```/secure```
-
-in headers provide,
+- To test secured areas, make a GET call to http://localhost:3000/api/secure and make sure to provide the header below in headers.
 
 ```x-access-header=access token from the previous API```
