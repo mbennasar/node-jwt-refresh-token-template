@@ -17,6 +17,6 @@ Install dependencies using **npm install** and then run the code using **node ap
 }
 ```
 
-- To test secured areas, make a GET call to http://localhost:3000/api/secure and make sure to provide the header below in headers.
+- To test secured areas, make a GET call to http://localhost:3000/api/secure and make sure to provide the **custom header** below in headers.
 
-```x-access-header=access token from the previous API```
+```x-access-token=access token from the previous API```
